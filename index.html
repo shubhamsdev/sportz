@@ -14,13 +14,14 @@
     <meta property="og:site_name" content="Sportz Interactive" />
 
     <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/slider.css"/>
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 
 
 </head>
 <body>
     
-        <header class="header">
+        <header id='header' class="header">
             <nav class="container">
                     <div class="nav-area">
                     <input type="checkbox" id="box">
@@ -48,23 +49,41 @@
                 </div>
             </nav>
         </header>
-        
-       <section class="slider">
+<!--         
+       <section id='slider-sec' class="slider">
             <div id="captioned-gallery">
                 <figure class="slider">
+                    <input type="radio" id="i1" name="images" checked />
+                    <input type="radio" id="i2" name="images" />
+                    <input type="radio" id="i3" name="images" />
                     <figure>
+                        
                         <img class='m-none' src="./assets/images/banner.jpg" alt>
                         <img class="d-none" src="./assets/images/banner-2.jpg" alt>
+                        <label class="prev" for="i3"><span>&#x2039;</span></label>
+                        <label class="next" for="i2"><span>&#x203a;</span></label>	
+                    </figure>
+                    <figure>
+                        
+                        <img class='m-none' src="./assets/images/banner.jpg" alt>
+                        <img class="d-none" src="./assets/images/banner-2.jpg" alt>
+
+                        <label class="prev" for="i1"><span>&#x2039;</span></label>
+                        <label class="next" for="i3"><span>&#x203a;</span></label>	
                     </figure>
                     <figure>
                         <img class='m-none' src="./assets/images/banner.jpg" alt>
                         <img class="d-none" src="./assets/images/banner-2.jpg" alt>
-                    </figure>
-                    <figure>
-                        <img class='m-none' src="./assets/images/banner.jpg" alt>
-                        <img class="d-none" src="./assets/images/banner-2.jpg" alt>
+                        
+                        <label class="prev" for="i2"><span>&#x2039;</span></label>
+                        <label class="next" for="i1"><span>&#x203a;</span></label>	
                     </figure>
                 </figure>
+                <div id="nav_slide">
+                    <label for="i1" class="dots" id="dot1"></label>
+                    <label for="i2" class="dots" id="dot2"></label>
+                    <label for="i3" class="dots" id="dot3"></label>
+                </div>    
                 <figcaption>
                     <article>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit massa auctor cursus feugiat. 
@@ -76,9 +95,54 @@
                     <path fill-rule="evenodd"  opacity="0.902" fill="rgb(255, 255, 255)"
                     d="M0.034,42.572 C0.034,99.965 -0.003,147.979 -0.003,147.979 L686.457,148.018 C686.457,148.018 631.895,43.370 631.695,42.971 C610.359,0.371 562.589,0.224 562.589,0.224 C562.589,0.224 186.527,0.224 41.725,0.224 C41.725,0.224 0.034,-5.378 0.034,42.572 Z"/>
                     </svg>
-                </figcaption>
+                </figcaption> 
 
             </div>
+        </section> -->
+
+        <section id='slider-sec' class="slider">
+	
+                <input type="radio" id="i1" name="images" checked />
+                <input type="radio" id="i2" name="images" />
+                <input type="radio" id="i3" name="images" />
+                
+                <div class="slide_img" id="one">			
+                        
+                        <img class='m-none' src="./assets/images/banner.jpg" alt>
+                        <img class="d-none" src="./assets/images/banner-2.jpg" alt>
+                        
+                            <label class="prev" for="i3"><span><i class="fa fa-chevron-left"></i></span></label>
+                            <label class="next" for="i2"><span><i class="fa fa-chevron-right"></i></span></label>	
+                    
+                </div>
+                
+                <div class="slide_img" id="two">
+                    
+                    <img class='m-none' src="./assets/images/banner-1.jpg" alt>
+                    <img class="d-none" src="./assets/images/banner-2.jpg" alt>
+                       
+                            <label class="prev" for="i1"><span><i class="fa fa-chevron-left"></i></span></label>
+                            <label class="next" for="i3"><span><i class="fa fa-chevron-right"></i></span></label>
+                    
+                </div>
+                        
+                <div class="slide_img" id="three">
+                        <img class='m-none' src="./assets/images/banner.jpg" alt>
+                        <img class="d-none" src="./assets/images/banner-2.jpg" alt>
+    
+                            <label class="prev" for="i2"><span><i class="fa fa-chevron-left"></i></span></label>
+                            <label class="next" for="i1"><span><i class="fa fa-chevron-right"></i></span></label>
+                </div>
+            
+              
+            
+                <div id="nav_slide">
+                    <label for="i1" class="dots" id="dot1"></label>
+                    <label for="i2" class="dots" id="dot2"></label>
+                    <label for="i3" class="dots" id="dot3"></label>
+                </div>
+                    
+            
         </section>
       
     <article class="grid-container">
@@ -158,12 +222,13 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <footer class="container">
         <div class="top">
-
+            <a href="#header"><i class="fa fa-chevron-up"></i></a>
         </div>
+    </div>
+ 
+    <footer class="container">
+      
         <div class="footer-sec">
             <div>
                 <span>
