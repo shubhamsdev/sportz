@@ -309,7 +309,7 @@
     height: 304px;
     width: 100%;
     background: linear-gradient(
-0deg, rgba(183,39,119,0.8) 0%, rgba(226,51,114,0.8) 50%, rgba(240,91,81,0.8) 76%, rgba(254,131,48,0.8) 100%), url(./assets/images/cycle-man.jpg);
+0deg, rgba(183,39,119,0.8) 0%, rgba(226,51,114,0.8) 50%, rgba(240,91,81,0.8) 76%, rgba(254,131,48,0.8) 100%), url('../images/cycle-man.jpg');
     background-repeat: no-repeat;
     background-position: top;
     clip-path: polygon(52% 0, 100% 0, 100% 100%, 100% 100%);
